@@ -1,26 +1,59 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "New Personal Website"
 theme = "cayman"
 # theme = "hallo"
 [Author]
   name = "Cem Koc"
 [params]
-  greeting = "Hi."
-  [[params.links]]
-    icon = "github-square"
-    title = "Github"
-    url = "https://github.com/cemkoc"
-  [[params.links]]
-        icon = "linkedin"
-        title = "LinkedIn"
-        url = "https://www.linkedin.com/in/cemkocdev/"
-  [[params.links]]
-    icon = "medium"
-    title = "Posts"
-    url = "https://medium.com/@cemkoc"
-  [params.colors]
-        background = "#32afa9"
-        foreground = "#a4d4ae"
-        hover = "#f0cf85"
+  # Header text, can be markdown
+  project_name = "Hi. I am Cem Koc."
+  project_tagline = "I work as a software engineer at Apple and this is my personal website"
 
+  # Date format for post list and single pages
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "2006-01-02"
+
+  # Footer text, can be markdown
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+
+  # If true, the CSS/JS for Katex math typesetting are enabled
+  katex = true
+
+  # Breakpoints
+  large_breakpoint = "64em"
+  medium_breakpoint = "42em"
+
+  # Header colors
+  header_heading_color = "#dff6f0"
+  header_background_color = "#46b3e6"
+  header_background_color_secondary = "#46b3e6"
+
+  # Text colors
+  section_headings_color = "#46b3e6"
+  body_text_color = "#46b3e6"
+  body_link_color = "#1e6bb8"
+  blockquote_text_color = "#819198"
+
+  # Code colors
+  code_background_color = "#263f44"
+  code_text_color = "#ffd369"
+
+  # Border colors
+  border_color = "#dce6f0"
+  table_border_color = "#e9ebec"
+  hr_border_color = "#eff0f1"
+
+[menu]
+  [[menu.nav]]
+    name = "Posts"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.nav]]
+    name = "About"
+    url = "/about/"
+    weight = 3
