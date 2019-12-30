@@ -1,3 +1,26 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+theme = "cayman"
+# theme = "hallo"
+[Author]
+  name = "Cem Koc"
+[params]
+  greeting = "Hi."
+  [[params.links]]
+    icon = "github-square"
+    title = "Github"
+    url = "https://github.com/cemkoc"
+  [[params.links]]
+        icon = "linkedin"
+        title = "LinkedIn"
+        url = "https://www.linkedin.com/in/cemkocdev/"
+  [[params.links]]
+    icon = "medium"
+    title = "Posts"
+    url = "https://medium.com/@cemkoc"
+  [params.colors]
+        background = "#32afa9"
+        foreground = "#a4d4ae"
+        hover = "#f0cf85"
+
